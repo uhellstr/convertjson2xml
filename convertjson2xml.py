@@ -4,18 +4,18 @@
 """
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     Simple Python routine to convert JSON to XML
-    Example: python convert.py /home/hellsulf/orascript/json2xml/JSON/2020_8_f1.json
+    Example: python convertjson2xml.py /home/hellsulf/orascript/json2xml/JSON/2020_8_f1.json
 
     Note: Requires json2xml
     pip install json2xml
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """
 
 
 import sys
 from json2xml import json2xml
 from json2xml.utils import readfromurl, readfromstring, readfromjson
-from pathlib import Path 
+from pathlib import Path
 
 
 def gen_xmlfile_from_json_file(inputfile):
@@ -26,7 +26,7 @@ def gen_xmlfile_from_json_file(inputfile):
 
 """
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Main 
+    Main
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """
 def main():
